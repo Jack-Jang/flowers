@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #flower-house{
+            z-index: 99999;
+        }
+    </style>
+</head>
+<body>
+    <div id="flower-house"></div>
+    <div>22222222</div>
+    <script src="assets/js/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            $.ajax({
+                url:"index.html",
+                type:"get",
+               success:function(result){ 
+                   $(result).replaceAll("#flower-house");
+                    $("#canvas").click(function(){
+                    $("#ci-particles").css("display","none");
+                    body.css("background-color","transparent")
+            })
+                }
+            })
+           
+        })
+    </script>
+</body>
+</html>
